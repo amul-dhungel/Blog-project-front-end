@@ -1,0 +1,422 @@
+<html>
+  <head>
+    <title>Professional Resume</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <style>
+      html {
+        background-color: #444;
+        padding: 0 1em;
+          
+          
+      }
+      body {
+        background-color: #FFF;
+        font-family: 'Lato', sans-serif;
+        margin: 1em auto;
+        max-width: 50em;
+        height: 130%;
+        
+      }
+        
+        .section-top{
+            
+            width: 100%;
+            height: 20%;
+            background-image: url(images/drone.jpg);
+            
+        }
+        
+        .section-bottom{
+            
+            width: 100%;
+            height: 30%;
+        }
+      #section-left {
+        width: 35%;
+        float: left;
+        height: 80%;
+        background-color: #144780;
+        color: #fff;
+        text-align: center;
+        
+      }
+      #section-left .section {
+        margin-top: 40%;
+        padding: 1em;
+      }
+      #section-left .section .logo {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background: url('http://jaipurstudents.com/broker/wp-content/uploads/2015/10/dummy-logo-300x140.png');
+      }
+      .intro hr {
+        width: 4em;
+        display: block;
+        height: 2px;
+        border: 0px;
+        border-top: 2px solid;
+      }
+      .dob {
+        text-decoration: overline underline;
+      }
+      .intro .content {
+        margin-bottom: 20px;
+      }
+      #contact {
+        margin-top: 40px;
+      }
+      h1 {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+      }
+      #section-right {
+        width: 65%;
+        float: right;
+        height: 80%;
+          background-color: white;
+      }
+      #section-right .section {
+        margin: 0 0 30px 0;
+      }
+      .wrapper {
+        padding: 2em;
+      }
+      .fa {
+        margin-right: 15px;
+      }
+      .wrapper .title {
+        color: #3E8BE3;
+        font-size: 1.3em;
+        font-variant: small-caps;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        border-bottom: 2px solid #f2f2f2;
+         
+      }
+      a:link {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:active {
+        color: #fff;
+        text-decoration: none;
+      }
+      h2 {
+        text-transform: uppercase;
+        font-size: 1em;
+      }
+      h3 {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+        
+   .name{
+        padding-top: 150px;
+       padding-left: 300px;
+       color: #144780;
+       font-family: sans-serif;
+        }
+        
+        .background-wrap {
+				position: fixed;
+				z-index: -1000;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+			}
+			
+			#video-bg-elem {
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-height: 100%;
+				min-width: 100%;
+			}
+        
+        .menu {
+  height: 70px;
+  width: 70px;
+  right: 70px;
+  top: 20px;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif; 
+  position: fixed;
+  background: #AAA;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  z-index: 999;
+  opacity: 0.9;
+}
+.menu.active {
+  width: calc(100% - 140px);
+}
+.menu.active .menuContent * {
+  opacity: 1;
+}
+.menu.active span i:nth-child(1) {
+  transform: rotate(-45deg) translate(-50%, -50%);
+  top: 50%;
+}
+.menu.active span i:nth-child(2) {
+  transform: translateX(-100px);
+  opacity: 0;
+}
+.menu.active span i:nth-child(3) {
+  transform: rotate(45deg) translate(-50%, -50%);
+  top: 50%;
+}
+.menu span {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  background: #AAA;
+  z-index: 1;
+}
+.menu span i {
+  position: absolute;
+  transform-origin: 50% 50%;
+  width: 45%;
+  height: 2px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ccc;
+  transition: transform 0.3s ease, opacity 0.1s ease 0.1s;
+}
+.menu span i:nth-child(1) {
+  top: 40%;
+}
+.menu span i:nth-child(2) {
+  top: 50%;
+}
+.menu span i:nth-child(3) {
+  top: 60%;
+}
+.menu .menuContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  right: 0px;
+  text-align: center;
+}
+.menu .menuContent * {
+  opacity: 0;
+}
+.menu .menuContent ul li {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #fff;
+  transition: opacity 0.3s ease 0.6s;
+  cursor: pointer;
+  position: relative;
+}
+.menu .menuContent ul li:hover:before {
+  opacity: 0.8;
+  top: 13px;
+  left: 20px;
+}
+.menu .menuContent ul li:hover:after {
+  opacity: 0.8;
+  bottom: 13px;
+  left: -20px;
+}
+.menu .menuContent ul li:before, .menu .menuContent ul li:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: black;
+  transition: all 0.3s ease;
+}
+.menu .menuContent ul li:before {
+  transform: rotate(-55deg);
+  left: 60px;
+  top: -30px;
+  opacity: 0;
+  right: 0;
+  margin: auto;
+}
+.menu .menuContent ul li:after {
+  transform: rotate(-55deg);
+  left: -60px;
+  bottom: -30px;
+  opacity: 0;
+  right: 0;
+  margin: auto;
+}
+        
+        .rounded{
+            width: 240px;
+            padding-right: 1000px;
+            
+        } 
+        
+        .rounded img{
+            border-radius: 50%;
+        }
+    </style>
+  </head>
+
+  <body>
+      
+ 
+    <div class='menu'>
+  <span class='toggle'>
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+  <div class='menuContent'>
+    <ul>
+      <li><a href="gamebot.html">Home</a></li>
+      <li><a href="blog.html">My blogs</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="portfolio.html" style="text-decoration-color: none;">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+ 
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+<script>
+    $('.toggle').on('click', function() {
+	$('.menu').toggleClass('active');
+});
+    
+</script>
+    
+</script>
+      <div class="section-top">
+         <div class="background-wrap">
+			<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> 
+				<source src="images/cloud.mp4" type="video/mp4">
+				Video not supported
+			</video>          
+		</div>
+          <div class="nameclass"><strong><h1 class="name">Amul Dhungel</h1></strong>
+      </div></div>
+    <div id="section-left">
+        
+      <div class="section intro">
+            
+        
+        
+        <div class="rounded">
+          <img src="images/amul.jpg" width="250px" height="250px" border="7" border-color="white"></div>
+        <h1>Amul Dhungel</h1>
+        <div class="content">
+          <span class="dob">20 APR 1998</span> <br>
+          <span class="intro">Developer</span> <br>
+          <span class="title">JAVA</span>
+        </div>
+        <hr>
+        <div id="contact">
+
+          <span class="num">9843xxxxxx</span>
+
+          <div class="email">
+            <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+            <a href="mailto:rambahadur@example.com">amuldhungel@gmail.com</a>
+          </div>
+          <div class="web">
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <a href="https://example.com">www.Amul.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-right">
+      <div class="wrapper">
+        <div class="section">
+          <div class="title">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Profile
+          </div>
+          <p>I am an intermediately experienced developer</p>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            Experience
+          </div>
+          <div class="content">
+            <h2>Web Developer</h2>
+            <h3>Company | AUG 2016 &raquo; Current</h3>
+            <ul>
+              <li>Develop feature for the platform</li>
+              <li>Develop feature for the platform</li>
+            </ul>
+          </div>
+
+          <div class="content">
+            <h2>Academics</h2>
+            <h3>Company | AUG 2016 &raquo; Current</h3>
+            <ul>
+              <li>Class 11 & 12</li>
+              <li>Bachelors in BIT</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            Education
+          </div>
+          <p>I am currently in my Bachelors Degree and seeking in pursuing other skill and expertise.</p>
+
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            Skills
+          </div>
+          <ul>
+            <li>Programming</li>
+            <li>Photo Editing</li>
+            <li>Project Management</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="title">
+            <i class="fa fa-trophy" aria-hidden="true"></i>
+            Awards
+          </div>
+          <div class="content">
+            <h2>National Coding Championship</h2>
+            <h3>Champion</h3>
+            <span class="date">2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <div class="section-bottom">
+            
+      </div>
+  </body>
+</html>

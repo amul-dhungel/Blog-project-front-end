@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us form</title>
+	<link rel="stylesheet" href="css/contact.css">
+    
+</head>
+<body>
+    
+    <div class='menu'>
+  <span class='toggle'>
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+  <div class='menuContent'>
+    <ul>
+      <li><a href="gamebot.html">Home</a></li>
+      <li><a href="blog.html">My blogs</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="portfolio.html" style="text-decoration-color: none;">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+ 
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+<script>
+    $('.toggle').on('click', function() {
+	$('.menu').toggleClass('active');
+});
+    
+</script>
+    
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.31625950546!2d85.29111328809762!3d27.708955944420673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu+44600!5e0!3m2!1sen!2snp!4v1557464681850!5m2!1sen!2snp" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+    
+    
+	<form name="registrationForm" onsubmit="checkForm()">
+<div class="wrapper">
+  <div class="contact-form">
+    <div class="input-fields">
+      <input type="text"  name="firstname" class="input" placeholder="Name">
+      <input type="text" name="email" class="input" placeholder="Email Address">
+      <input type="text" name="contact" class="input" placeholder="Phone">
+      <input type="text" name="subject" class="input" placeholder="Subject">
+    </div>
+    <div class="msg">
+      <textarea placeholder="Message"></textarea>
+      <div><input class="btn" type="submit" value="Submit" class="button" id="btn">Submit</div>
+    </div>
+  </div>
+</div>
+    </form>
+
+<script type="text/javascript" src="js/contact.js"></script>
+</body>
+</html>
